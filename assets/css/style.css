@@ -1,0 +1,131 @@
+.titulo{
+  color: brown;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  padding: 5%;
+}
+.primera_seccion{
+  margin: 1%;
+  padding: 3%;
+}
+
+.primera_seccion h3{
+  color: blue;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  padding-top: 3%;
+}
+
+.primera_seccion p{
+  color: blue;
+  font-family: 'Bitter', serif;
+  text-align: justify;
+  padding: 12% 3%;
+}
+
+/*con esto mi imagen ocupará el sólo el espacio que le corresponde por cantidad de col*/
+img{
+  width: 100%;
+}
+
+.lista{
+  padding-left: 15%;
+  padding-top: 10%;
+}
+
+/*con esto le quito el punto que genera la lista*/
+ul li{
+  list-style: none;
+}
+
+/*de esta forma le cambio los estilos a los iconos*/
+i{
+  font-size: 30px;
+  padding: 2%;
+  margin-right: 4%;
+  color: darkolivegreen;
+}
+
+/*Estos estilos cambiaran solo cuando mi pantalla tenga estas medidas*/
+@media (min-width: 200px) and (max-width: 425px) {
+  [class*="col-"] {
+    width: 100%;
+    text-align: center;
+  }
+
+  body{
+    background-color: beige;
+    padding: 3%;
+  }
+  
+  .titulo{
+    font-size: 20px;
+    color: black;
+  }
+
+  .primera_seccion h3 {
+    color: black;
+  }
+
+  .primera_seccion p {
+    color: black;
+  }
+
+  /*esto me sirve para ocultar una sección con @media queries*/
+  .lista{
+    display: none;
+  }
+
+  img{
+    width: 80%;
+  }
+
+  /*con esta opción cambio los imagenes de acuerdo al tamaño de mi pantalla*/
+  .gatito{
+    content: url("../img/reemplazao_gatigo.jpg")
+  }
+}
+
+/*Estos estilos cambiaran solo cuando mi pantalla tenga estas medidas*/
+@media (min-width: 426px) and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+    text-align: center;
+  }
+
+  body{
+    background-color: lightblue;
+    padding: 5%;
+  }
+  
+  .titulo{
+    font-size: 30px;
+    color: lightcoral;
+  }
+
+  .primera_seccion h3 {
+    color: lightcoral;
+  }
+
+  .primera_seccion p {
+    color: lightcoral;
+  }
+
+  .lista ul li{
+    float: left;
+    padding-bottom: 4%;
+    color: ivory;
+  }
+
+  i{
+    color: ivory;
+  }
+
+  img{
+    width: 80%;
+  }
+
+  .gatita{
+    content: url("../img/reemplazo_gatita.jpg")
+  }
+}
